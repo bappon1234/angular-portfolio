@@ -9,7 +9,6 @@
     text-align: center;
     padding: 30px;
     background-color: #abefc6bd;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,10 +66,31 @@
 }
 
 @media (max-width: 768px) {
-    .my-skill {
-        width: 95%;
-    }
     .skill {
-        flex: 1 1 100%; /* Makes skill bars stack on smaller screens */
+        display: flex;
+        align-items: center;
     }
+    .skill-container{
+        padding: 0px;
+        height: 300px;
+    }
+    .skill-container span{
+        width: 120px;
+    }
+    .my-skill{
+        display: flex;
+        gap: 30px;
+    }
+    .my-skill h1{
+        padding: 0px;
+    }
+    .skill span{
+        display: flex;
+        align-items: center;
+        margin: 0px;
+    }
+    .skill-bar{
+        width: 100%;
+    }
+
 }
