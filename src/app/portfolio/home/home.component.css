@@ -1,0 +1,145 @@
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Home Page Full Width */
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 50px;
+}
+
+/* Hero Text */
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Call to Action Button */
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #FF5733;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: #C70039;
+}
+
+.btn-secondary {
+    background-color: #28A745;
+    margin-left: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #218838;
+}
+
+/* Hero Image */
+.hero-image img {
+    width: 450px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .btn {
+        margin: 0px 0px 10px 0px;
+    }
+
+    .hero-image img {
+        width: 320px;
+        margin-top: 20px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 576px) {
+    .home {
+        padding: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 250px;
+    }
+}
